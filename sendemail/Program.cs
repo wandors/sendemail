@@ -7,7 +7,7 @@ namespace sendemail
     {
         static void Main(string[] args)
         {
-
+            /* Отправка письма с вложениям ччерез gmail почту средствами с№**/
             MailMessage mail = new MailMessage();
             SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
             mail.From = new MailAddress("srpolunec@gmail.com");
