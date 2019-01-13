@@ -14,9 +14,11 @@ namespace sendemail
             mail.To.Add("polunec@ukr.net");
             mail.Subject = "Test Mail - 1";
             mail.Body = "mail with attachment";
+            /*отправка файла вложения -файла*/
             System.Net.Mail.Attachment attachment;
             attachment = new System.Net.Mail.Attachment("d:/textfile.txt");
             mail.Attachments.Add(attachment);
+            /*++++++++++++++++++++++++++++++++++++++++*/
             SmtpServer.Port = 587;
             SmtpServer.Credentials = new System.Net.NetworkCredential("srpolunec@gmail.com", "sr250384");
             SmtpServer.EnableSsl = true;
