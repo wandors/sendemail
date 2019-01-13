@@ -1,4 +1,5 @@
-﻿using System.Net;
+﻿// Программу нужно проверить через сервер ПВК
+using System.Net;
 using System.Net.Mail;
 
 namespace sendemail
